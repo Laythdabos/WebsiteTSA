@@ -1,54 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Green Energy for TSA</title>
-</head>
-
-<body>
-  <nav class="navbar h-nav ">
-    <div class="nav-left-side v-class">
-      <ul class="nav-list">
-        <div class="logo btn">
-          <img src="img/logo.jpg" alt="logo">
-        </div>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="kitchen.html">KITCHEN</a></li>
-        <li><a href="bedroom.html">BEDROOM</a></li>
-        <li><a href="livingroom.html">LIVING ROOM</a></li>
-        <li><a href="bathroom.html">BATHROOM</a></li>
-        <li><a href="references.html">REFERENCES</a></li>
-      </ul>
-    </div>
-    <div class="nav-right-side v-class">
-      <div class="sub-right-side">
-        <div class="box">
-          <input type="text" placeholder="Search Here" name="search" id="search">
-          <button class="btn-search btn">Search</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Green Energy for TSA</title>
+  </head>
+  <body>
+    <nav class="navbar h-nav ">
+      <div class="nav-left-side v-class">
+        <ul class="nav-list">
+          <div class="logo btn">
+            <img src="img/logo.jpg" alt="logo">
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-side v-class">
+        <div class="sub-right-side">
         </div>
       </div>
-    </div>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
+      <div class="burger">
+        <li onclick=showSidebar()><div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </li>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li><a src="close.png"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = 'flex'
+      }
+    </script>
 
 
   <h1 style="text-align: center;">The Most Energy Efficient Oven</h1>
-  <a href="https://www.bestbuy.com/site/whirlpool-5-0-cu-ft-freestanding-gas-convection-range-with-self-cleaning-stainless-steel/6380829.p?skuId=6380829" target="_blank" ><img src="oven.jpg" class="center" alt="Whirlpool Energy Star" width="20%"></a>
-  <p class="textbox" style="text-align: center;">In the gas vs electric stove debate, many people have been determined to know what is the most effective and efficient stove. The debate has come to a close with this knowledge. In short, gas stoves are the clear winner in efficiency, but it all depends on your preference. It takes three times as much energy to deliver energy to your stove than gas, so buying a gas range could save you money. Your bill might include gas bills, but using electric ignition, you’ll end up paying less than half as much as using an electric stove. You also spend less time cooking using a gas stove since the flame is constant and the heat is evenly distributed throughout the pan other than an electric stove. Click on image to buy the oven.</p>
+  <img src="oven.jpg" class="center" alt="Whirlpool Energy Star" width="15%">
+  <p><a href="https://www.bestbuy.com/site/whirlpool-5-0-cu-ft-freestanding-gas-convection-range-with-self-cleaning-stainless-steel/6380829.p?skuId=6380829" style="text-align: center;" target="_blank"><img src="buynow.png" width="15%" alt="buy now" class="kitchenImg"></a></p>
+  <p class="textbox" style="text-align: center;">In the gas vs electric stove debate, many people have been determined to know what is the most effective and efficient stove. The debate has come to a close with this knowledge. In short, gas stoves are the clear winner in efficiency, but it all depends on your preference. It takes three times as much energy to deliver energy to your stove than gas, so buying a gas range could save you money. Your bill might include gas bills, but using electric ignition, you’ll end up paying less than half as much as using an electric stove. You also spend less time cooking using a gas stove since the flame is constant and the heat is evenly distributed throughout the pan other than an electric stove. Click buy now button, but if that doesn't work, click the link below.</p>
+    <p  style="text-align: center;""><a href="https://www.bestbuy.com/site/whirlpool-5-0-cu-ft-freestanding-gas-convection-range-with-self-cleaning-stainless-steel/6380829.p?skuId=6380829">Buy Now</a></p>
 
 </body>
 </html>

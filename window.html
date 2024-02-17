@@ -1,55 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Green Energy for TSA</title>
-</head>
-
-<body>
-  <nav class="navbar h-nav ">
-    <div class="nav-left-side v-class">
-      <ul class="nav-list">
-        <div class="logo btn">
-          <img src="img/logo.jpg" alt="logo">
-        </div>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="kitchen.html">KITCHEN</a></li>
-        <li><a href="bedroom.html">BEDROOM</a></li>
-        <li><a href="livingroom.html">LIVING ROOM</a></li>
-        <li><a href="bathroom.html">BATHROOM</a></li>
-        <li><a href="references.html">REFERENCES</a></li>
-      </ul>
-    </div>
-    <div class="nav-right-side v-class">
-      <div class="sub-right-side">
-        <div class="box">
-          <input type="text" placeholder="Search Here" name="search" id="search">
-          <button class="btn-search btn">Search</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Green Energy for TSA</title>
+  </head>
+  <body>
+    <nav class="navbar h-nav ">
+      <div class="nav-left-side v-class">
+        <ul class="nav-list">
+          <div class="logo btn">
+            <img src="img/logo.jpg" alt="logo">
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-side v-class">
+        <div class="sub-right-side">
         </div>
       </div>
-    </div>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
+      <div class="burger">
+        <li onclick=showSidebar()><div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </li>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li><a src="close.png"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = 'flex'
+      }
+    </script>
 
   <h1 style="text-align: center;"">Insulation</h1>
 
-  <a href="https://www.newhomesource.com/learn/insulating-your-home/" target="_blank" ><img src="insulation.png" class="kitchenImg" alt="Insulation" width=:60%></a>
+  <img src="insulation.png" class="kitchenImg" alt="Insulation" width=:60%>
 
-  <p class="textbox" style="text-align: center;">Insulating your home is a way to keep it warm and comfortable. You can start by insulating your windows or considering glazing, which will help minimize heat loss and make your bedroom cozy all year round. These insulation methods do not improve the energy efficiency of your home. Also helps reduce the need for excessive heating, leading to lower energy consumption and utility bills over time. Prioritizing insulation does enhance comfort. Also promotes a sustainable and energy-conscious lifestyle. Click the picture to learn more.</p>
+  <p><a href="https://www.newhomesource.com/learn/insulating-your-home/" style="text-align: center;" target="_blank"><img src="buynow.png" width="15%" alt="buy now" class="kitchenImg"></a></p>
+
+  <p class="textbox" style="text-align: center;">Insulating your home is a way to keep it warm and comfortable. You can start by insulating your windows or considering glazing, which will help minimize heat loss and make your bedroom cozy all year round. These insulation methods do not improve the energy efficiency of your home. Also helps reduce the need for excessive heating, leading to lower energy consumption and utility bills over time. Prioritizing insulation does enhance comfort. Also promotes a sustainable and energy-conscious lifestyle. Click on the buy now button to learn more, but if that doesn't work, click the link below.</p>
+     <p  style="text-align: center;""><a href="https://www.newhomesource.com/learn/insulating-your-home/">Learn More</a></p>
   
 </body>
 </html>

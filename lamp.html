@@ -1,62 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Green Energy for TSA</title>
-</head>
-
-<body>
-  <nav class="navbar h-nav ">
-    <div class="nav-left-side v-class">
-      <ul class="nav-list">
-        <div class="logo btn">
-          <img src="img/logo.jpg" alt="logo">
-        </div>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="kitchen.html">KITCHEN</a></li>
-        <li><a href="bedroom.html">BEDROOM</a></li>
-        <li><a href="livingroom.html">LIVING ROOM</a></li>
-        <li><a href="bathroom.html">BATHROOM</a></li>
-        <li><a href="references.html">REFERENCES</a></li>
-      </ul>
-    </div>
-    <div class="nav-right-side v-class">
-      <div class="sub-right-side">
-        <div class="box">
-          <input type="text" placeholder="Search Here" name="search" id="search">
-          <button class="btn-search btn">Search</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Green Energy for TSA</title>
+  </head>
+  <body>
+    <nav class="navbar h-nav ">
+      <div class="nav-left-side v-class">
+        <ul class="nav-list">
+          <div class="logo btn">
+            <img src="img/logo.jpg" alt="logo">
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-side v-class">
+        <div class="sub-right-side">
         </div>
       </div>
-    </div>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
+      <div class="burger">
+        <li onclick=showSidebar()><div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </li>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li><a src="close.png"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = 'flex'
+      }
+    </script>
   <h1 style="text-align: center;">Energy Efficient Lamps</h1>
-  <p><a
-      href="https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6?crid=1PD0CRX29MG5H&keywords=Energy+Saving+bedside+lamp&qid=1707272395&sprefix=energy+saving+bedside+lamp%2Caps%2C163&sr=8-6https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6?crid=1PD0CRX29MG5H&keywords=Energy+Saving+bedside+lamp&qid=1707272395&sprefix=energy+saving+bedside+lamp%2Caps%2C163&sr=8-6"
-      target="_blank" style="text-align: center;"><img src="lamp.jpg" width="700" height="auto"
-        alt="Amazon Energy Efficient Lamp: Link Below" usemap="#lampMap" class="center">"</a></p>
-  <center>
+  <img src="lamp.jpg" width="700" height="auto"alt="Amazon Energy Efficient Lamp: Link Below" class="center">
+  <p><a href="https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6?crid=1PD0CRX29MG5H&keywords=Energy+Saving+bedside+lamp&qid=1707272395&sprefix=energy+saving+bedside+lamp%2Caps%2C163&sr=8-6https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6" style="text-align: center;" target="_blank"><img src="buynow.png" width="15%" alt="buy now" class="kitchenImg"></a></p>
     <p class="textbox"> Switching to LEDs can reduce your energy consumption by 75 to 80 percent. LED emergency lighting
       typically costs about the same as those that use incandescent or fluorescent lamps. However, they are more
       cost-efficient in the long run.LED lights are the most energy-efficient type of lighting available today. In fact,
       they are 85% to 90% more efficient than incandescent lamps and 40% to 50% more than fluorescent. In fact, LED
-      fixtures in general can reduce energy consumption by 40% to 90% overall. Click on the picture for an energy
-      efficient lamp!</p>
-  </center>
+      fixtures in general can reduce energy consumption by 40% to 90% overall. Click buy now button, but if that doesn't work, click the link below.</p>
+    <p  style="text-align: center;""><a href="https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6?crid=1PD0CRX29MG5H&keywords=Energy+Saving+bedside+lamp&qid=1707272395&sprefix=energy+saving+bedside+lamp%2Caps%2C163&sr=8-6https://www.amazon.com/MAGCHARM-Included-Energy-Saving-Nightstand-Lampshade/dp/B0C348LHPJ/ref=sr_1_6">Buy Now</a></p>
   <script src="script.jsjs"></script>
 </body>
 

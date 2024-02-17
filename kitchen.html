@@ -5,16 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Green Energy for TSA</title>
 </head>
-
 <body>
   <nav class="navbar h-nav ">
     <div class="nav-left-side v-class">
@@ -32,35 +30,48 @@
     </div>
     <div class="nav-right-side v-class">
       <div class="sub-right-side">
-        <div class="box">
-          <input type="text" placeholder="Search Here" name="search" id="search">
-          <button class="btn-search btn">Search</button>
-        </div>
       </div>
     </div>
     <div class="burger">
+      <li onclick=showSidebar()><div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
-      <div class="line"></div>
+      </li>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a src="close.png"></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="kitchen.html">KITCHEN</a></li>
+        <li><a href="bedroom.html">BEDROOM</a></li>
+        <li><a href="livingroom.html">LIVING ROOM</a></li>
+        <li><a href="bathroom.html">BATHROOM</a></li>
+        <li><a href="references.html">REFERENCES</a></li>
+        </ul>
     </div>
   </nav>
 
-
-  
-  <script src="script.jsjs"></script>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector(".sidebar");
+      sidebar.style.display = 'flex'
+    }
+  </script>
 
   <h1 style="text-align: center;">The Kitchen</h1>
-  <p style="text-align: center;">Click on the appliances in the image to find the most energy efficient ones on the market.</p>
+  <p style="text-align: center;">Click on the appliances in the image to find the most energy efficient ones on the
+    market.</p>
   <br>
   <p style="text-align: center;">Specifically the fridge, dishwasher, and oven.</p>
 
   <img src="kitchen.jpg" usemap="#kitchenMap" class="kitchenImg" width="600px" height="550px">
 
-    <map name="kitchenMap">
-      <area shape="rect" coords="480,60,1000,750" alt="refrigerador" href="fridge.html">
-      <area shape="rect" coords="230,320,370,500" alt="oven" href="oven.html">
-      <area shape="rect" coords="100,300,200,650" alt="dishwasher" href="dishwasher.html">
-    </map>
+  <map name="kitchenMap">
+    <area shape="rect" coords="480,60,1000,750" alt="refrigerador" href="fridge.html">
+    <area shape="rect" coords="230,320,370,500" alt="oven" href="oven.html">
+    <area shape="rect" coords="100,300,200,650" alt="dishwasher" href="dishwasher.html">
+  </map>
 
-  </body>
+</body>
+
 </html>

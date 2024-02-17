@@ -1,50 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Green Energy for TSA</title>
-</head>
-
-<body>
-  <nav class="navbar h-nav ">
-    <div class="nav-left-side v-class">
-      <ul class="nav-list">
-        <div class="logo btn">
-          <img src="img/logo.jpg" alt="logo">
-        </div>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="kitchen.html">KITCHEN</a></li>
-        <li><a href="bedroom.html">BEDROOM</a></li>
-        <li><a href="livingroom.html">LIVING ROOM</a></li>
-        <li><a href="bathroom.html">BATHROOM</a></li>
-        <li><a href="references.html">REFERENCES</a></li>
-      </ul>
-    </div>
-    <div class="nav-right-side v-class">
-      <div class="sub-right-side">
-        <div class="box">
-          <input type="text" placeholder="Search Here" name="search" id="search">
-          <button class="btn-search btn">Search</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Green Energy for TSA</title>
+  </head>
+  <body>
+    <nav class="navbar h-nav ">
+      <div class="nav-left-side v-class">
+        <ul class="nav-list">
+          <div class="logo btn">
+            <img src="img/logo.jpg" alt="logo">
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFERENCES</a></li>
+        </ul>
+      </div>
+      <div class="nav-right-side v-class">
+        <div class="sub-right-side">
         </div>
       </div>
-    </div>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
+      <div class="burger">
+        <li onclick=showSidebar()><div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </li>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li><a src="close.png"></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="kitchen.html">KITCHEN</a></li>
+          <li><a href="bedroom.html">BEDROOM</a></li>
+          <li><a href="livingroom.html">LIVING ROOM</a></li>
+          <li><a href="bathroom.html">BATHROOM</a></li>
+          <li><a href="references.html">REFRENCES</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = 'flex'
+      }
+    </script>
 
   <h1 style="text-align: center;"">The Resource Saving Shower Head</h1>
-  <a href="https://www.dkhardware.com/yat-933e-9-spray-45-in-single-wall-mount-low-flow-fixed-shower-head-in-chrome-product-3360087.html?utm_source=google&utm_medium=shopping&utm_campaign=free_listings&gad_source=1&gclid=CjwKCAiAt5euBhB9EiwAdkXWO1XGqF0V42BTBKD3hfmDsRK6vD_LYnvsTT8MyrZo6tLdXCLLEA7HfRoCgugQAvD_BwE" target="_blank" ><img src="shower.jpg" class="kitchenImg" alt="Shower" width=20%></a>
-  <p style="text-align: center" class="textbox">Low-flow shower heads have a flow rate lower than 1.5 gpm (gallons per minute), while traditional shower heads use 2.5 gpm. Heating up water takes up energy. Thus, users are also cutting down on their energy expenditure by cutting down on water consumption. Low-flow shower heads can decrease water consumption by 40% or more </p>
+  <img src="shower.jpg" class="kitchenImg" alt="Shower" width=20%>
+  <p><a href="https://www.dkhardware.com/yat-933e-9-spray-45-in-single-wall-mount-low-flow-fixed-shower-head-in-chrome-product-3360087.html?utm_source=google&utm_medium=shopping&utm_campaign=free_listings&gad_source=1&gclid=CjwKCAiAt5euBhB9EiwAdkXWO1XGqF0V42BTBKD3hfmDsRK6vD_LYnvsTT8MyrZo6tLdXCLLEA7HfRoCgugQAvD_BwE" style="text-align: center;"><img src="buynow.png" width="15%" alt="buy now" class="kitchenImg"></a></p>
+  <p style="text-align: center" class="textbox">Low-flow shower heads have a flow rate lower than 1.5 gpm (gallons per minute), while traditional shower heads use 2.5 gpm. Heating up water takes up energy. Thus, users are also cutting down on their energy expenditure by cutting down on water consumption. Low-flow shower heads can decrease water consumption by 40% or more. Click buy now button, but if that doesn't work, click the link below. </p>
+     <p  style="text-align: center;""><a href="https://www.dkhardware.com/yat-933e-9-spray-45-in-single-wall-mount-low-flow-fixed-shower-head-in-chrome-product-3360087.html?utm_source=google&utm_medium=shopping&utm_campaign=free_listings&gad_source=1&gclid=CjwKCAiAt5euBhB9EiwAdkXWO1XGqF0V42BTBKD3hfmDsRK6vD_LYnvsTT8MyrZo6tLdXCLLEA7HfRoCgugQAvD_BwE">Buy Now</a></p>
